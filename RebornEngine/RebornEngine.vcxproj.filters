@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="RBMath">
+      <UniqueIdentifier>{e42ae897-d6c0-4a28-b102-24138cbffc7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RBInput">
+      <UniqueIdentifier>{82d0e4db-e76f-4740-9915-f9d75e85b893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RBAudio">
+      <UniqueIdentifier>{8fea19b1-5820-4aea-be2c-edc4f223851a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RBLog">
+      <UniqueIdentifier>{78e11840-cdff-412b-8966-b9104ade78b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RBPhysics">
+      <UniqueIdentifier>{6a54c788-7ea4-4134-893d-dabb36707593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RBSystem">
+      <UniqueIdentifier>{f0624491-c914-4fee-9dc0-c9606e04fc6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RBRender">
+      <UniqueIdentifier>{4dde4a73-27f4-4a55-a37d-5078b77ef4df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RBShader">
+      <UniqueIdentifier>{1d797b05-ed05-4dbd-ba10-67427a0f9d40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RBScene">
+      <UniqueIdentifier>{b1a97335-8617-4a09-a5a5-3053505e472c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RBEngine.h" />
+    <ClInclude Include="RBAudio\RBAudio.h">
+      <Filter>RBAudio</Filter>
+    </ClInclude>
+    <ClInclude Include="RBInput\RBInput.h">
+      <Filter>RBInput</Filter>
+    </ClInclude>
+    <ClInclude Include="RBMath\RBColor.h">
+      <Filter>RBMath</Filter>
+    </ClInclude>
+    <ClInclude Include="RBMath\RBMath.h">
+      <Filter>RBMath</Filter>
+    </ClInclude>
+    <ClInclude Include="RBMath\RBMathUtility.h">
+      <Filter>RBMath</Filter>
+    </ClInclude>
+    <ClInclude Include="RBMath\RBMatrix.h">
+      <Filter>RBMath</Filter>
+    </ClInclude>
+    <ClInclude Include="RBMath\RBVector.h">
+      <Filter>RBMath</Filter>
+    </ClInclude>
+    <ClInclude Include="RBLog\RBLog.h">
+      <Filter>RBLog</Filter>
+    </ClInclude>
+    <ClInclude Include="RBShader\RBConstBufferCommon.h">
+      <Filter>RBShader</Filter>
+    </ClInclude>
+    <ClInclude Include="RBShader\RBConstBufferVS.h">
+      <Filter>RBShader</Filter>
+    </ClInclude>
+    <ClInclude Include="RBShader\RBShader.h">
+      <Filter>RBShader</Filter>
+    </ClInclude>
+    <ClInclude Include="RBPhysics\RBAABB.h">
+      <Filter>RBPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="RBPhysics\RBCollision.h">
+      <Filter>RBPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="RBPhysics\RBPhysics.h">
+      <Filter>RBPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="RBPhysics\RBRay.h">
+      <Filter>RBPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="RBSystem\RBIApplication.h">
+      <Filter>RBSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RBSystem\RBSerializer.h">
+      <Filter>RBSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RBSystem\RBSingleton.h">
+      <Filter>RBSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RBSystem\RBTimer.h">
+      <Filter>RBSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RBRender\DDSTextureLoader.h">
+      <Filter>RBRender</Filter>
+    </ClInclude>
+    <ClInclude Include="RBRender\RBIResource.h">
+      <Filter>RBRender</Filter>
+    </ClInclude>
+    <ClInclude Include="RBRender\RBVertex.h">
+      <Filter>RBRender</Filter>
+    </ClInclude>
+    <ClInclude Include="RBRender\RBRenderer.h">
+      <Filter>RBRender</Filter>
+    </ClInclude>
+    <ClInclude Include="RBRender\RBDirectXUtility.h">
+      <Filter>RBRender</Filter>
+    </ClInclude>
+    <ClInclude Include="RBRender\RBMeshElement.h">
+      <Filter>RBRender</Filter>
+    </ClInclude>
+    <ClInclude Include="RBRender\RBDebugRenderer.h">
+      <Filter>RBRender</Filter>
+    </ClInclude>
+    <ClInclude Include="RBRender\RBTexture.h">
+      <Filter>RBRender</Filter>
+    </ClInclude>
+    <ClInclude Include="RBShader\RBSharedDefines.h">
+      <Filter>RBShader</Filter>
+    </ClInclude>
+    <ClInclude Include="RBRender\RBAnimation.h">
+      <Filter>RBRender</Filter>
+    </ClInclude>
+    <ClInclude Include="RBRender\RBText.h">
+      <Filter>RBRender</Filter>
+    </ClInclude>
+    <ClInclude Include="RBRender\RBShaderManager.h">
+      <Filter>RBRender</Filter>
+    </ClInclude>
+    <ClInclude Include="RBRender\RBResourceManager.h">
+      <Filter>RBRender</Filter>
+    </ClInclude>
+    <ClInclude Include="RBRender\RBMaterial.h">
+      <Filter>RBRender</Filter>
+    </ClInclude>
+    <ClInclude Include="RBScene\RBCamera.h">
+      <Filter>RBScene</Filter>
+    </ClInclude>
+    <ClInclude Include="RBScene\RBSceneObject.h">
+      <Filter>RBScene</Filter>
+    </ClInclude>
+    <ClInclude Include="RBScene\RBScene.h">
+      <Filter>RBScene</Filter>
+    </ClInclude>
+    <ClInclude Include="RBScene\RBSkybox.h">
+      <Filter>RBScene</Filter>
+    </ClInclude>
+    <ClInclude Include="RBSystem\RBScriptSystem.h">
+      <Filter>RBSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RBScene\RBSceneMeshObject.h">
+      <Filter>RBScene</Filter>
+    </ClInclude>
+    <ClInclude Include="RBShader\RBShaderConstantBuffer.h">
+      <Filter>RBShader</Filter>
+    </ClInclude>
+    <ClInclude Include="RBShader\RBConstBufferPS.h">
+      <Filter>RBShader</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RBEngine.cpp" />
+    <ClCompile Include="RBAudio\RBAudio.cpp">
+      <Filter>RBAudio</Filter>
+    </ClCompile>
+    <ClCompile Include="RBInput\RBInput.cpp">
+      <Filter>RBInput</Filter>
+    </ClCompile>
+    <ClCompile Include="RBMath\RBMath.cpp">
+      <Filter>RBMath</Filter>
+    </ClCompile>
+    <ClCompile Include="RBMath\RBMathUtility.cpp">
+      <Filter>RBMath</Filter>
+    </ClCompile>
+    <ClCompile Include="RBMath\RBMatrix.cpp">
+      <Filter>RBMath</Filter>
+    </ClCompile>
+    <ClCompile Include="RBLog\RBLog.cpp">
+      <Filter>RBLog</Filter>
+    </ClCompile>
+    <ClCompile Include="RBShader\RBShader.cpp">
+      <Filter>RBShader</Filter>
+    </ClCompile>
+    <ClCompile Include="RBPhysics\RBAABB.cpp">
+      <Filter>RBPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="RBPhysics\RBCollision.cpp">
+      <Filter>RBPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="RBPhysics\RBRay.cpp">
+      <Filter>RBPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="RBSystem\RBTimer.cpp">
+      <Filter>RBSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="RBRender\DDSTextureLoader.cpp">
+      <Filter>RBRender</Filter>
+    </ClCompile>
+    <ClCompile Include="RBRender\RBVertex.cpp">
+      <Filter>RBRender</Filter>
+    </ClCompile>
+    <ClCompile Include="RBRender\RBRenderer.cpp">
+      <Filter>RBRender</Filter>
+    </ClCompile>
+    <ClCompile Include="RBRender\RBMeshElement.cpp">
+      <Filter>RBRender</Filter>
+    </ClCompile>
+    <ClCompile Include="RBRender\RBDebugRenderer.cpp">
+      <Filter>RBRender</Filter>
+    </ClCompile>
+    <ClCompile Include="RBRender\RBTexture.cpp">
+      <Filter>RBRender</Filter>
+    </ClCompile>
+    <ClCompile Include="RBRender\RBMesh.cpp">
+      <Filter>RBRender</Filter>
+    </ClCompile>
+    <ClCompile Include="RBRender\RBAnimation.cpp">
+      <Filter>RBRender</Filter>
+    </ClCompile>
+    <ClCompile Include="RBRender\RBText.cpp">
+      <Filter>RBRender</Filter>
+    </ClCompile>
+    <ClCompile Include="RBRender\RBShaderManager.cpp">
+      <Filter>RBRender</Filter>
+    </ClCompile>
+    <ClCompile Include="RBRender\RBResourceManager.cpp">
+      <Filter>RBRender</Filter>
+    </ClCompile>
+    <ClCompile Include="RBRender\RBMaterial.cpp">
+      <Filter>RBRender</Filter>
+    </ClCompile>
+    <ClCompile Include="RBScene\RBScene.cpp">
+      <Filter>RBScene</Filter>
+    </ClCompile>
+    <ClCompile Include="RBScene\RBSkybox.cpp">
+      <Filter>RBScene</Filter>
+    </ClCompile>
+    <ClCompile Include="RBScene\RBSceneObject.cpp">
+      <Filter>RBScene</Filter>
+    </ClCompile>
+    <ClCompile Include="RBScene\RBSceneMeshObject.cpp">
+      <Filter>RBScene</Filter>
+    </ClCompile>
+    <ClCompile Include="RBSystem\RBScriptSystem.cpp">
+      <Filter>RBSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="RBScene\RBCamera.cpp">
+      <Filter>RBScene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="RBShader\RBFontVertexSignature.hlsl">
+      <Filter>RBShader</Filter>
+    </FxCompile>
+    <FxCompile Include="RBShader\RBMeshVertexSignature.hlsl">
+      <Filter>RBShader</Filter>
+    </FxCompile>
+    <FxCompile Include="RBShader\RBParticleVertexSignature.hlsl">
+      <Filter>RBShader</Filter>
+    </FxCompile>
+    <FxCompile Include="RBShader\RBPrimitiveVertexSignature.hlsl">
+      <Filter>RBShader</Filter>
+    </FxCompile>
+    <FxCompile Include="RBShader\RBSkyboxVertexSignature.hlsl">
+      <Filter>RBShader</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

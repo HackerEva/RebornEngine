@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RBAudio\RBAudio.h" />
+    <ClInclude Include="RBInput\RBInput.h" />
+    <ClInclude Include="RBLog\RBLog.h" />
+    <ClInclude Include="RBMath\RBColor.h" />
+    <ClInclude Include="RBMath\RBMath.h" />
+    <ClInclude Include="RBMath\RBMathUtility.h" />
+    <ClInclude Include="RBMath\RBMatrix.h" />
+    <ClInclude Include="RBMath\RBVector.h" />
+    <ClInclude Include="RBPhysics\RBAABB.h" />
+    <ClInclude Include="RBPhysics\RBCollision.h" />
+    <ClInclude Include="RBPhysics\RBPhysics.h" />
+    <ClInclude Include="RBPhysics\RBRay.h" />
+    <ClInclude Include="RBRender\DDSTextureLoader.h" />
+    <ClInclude Include="RBRender\RBAnimation.h" />
+    <ClInclude Include="RBRender\RBDebugRenderer.h" />
+    <ClInclude Include="RBRender\RBDirectXUtility.h" />
+    <ClInclude Include="RBRender\RBIResource.h" />
+    <ClInclude Include="RBRender\RBMaterial.h" />
+    <ClInclude Include="RBRender\RBMeshElement.h" />
+    <ClInclude Include="RBRender\RBRenderer.h" />
+    <ClInclude Include="RBRender\RBResourceManager.h" />
+    <ClInclude Include="RBRender\RBShaderManager.h" />
+    <ClInclude Include="RBRender\RBText.h" />
+    <ClInclude Include="RBRender\RBTexture.h" />
+    <ClInclude Include="RBRender\RBVertex.h" />
+    <ClInclude Include="RBScene\RBCamera.h" />
+    <ClInclude Include="RBScene\RBScene.h" />
+    <ClInclude Include="RBScene\RBSceneMeshObject.h" />
+    <ClInclude Include="RBScene\RBSceneObject.h" />
+    <ClInclude Include="RBScene\RBSkybox.h" />
+    <ClInclude Include="RBShader\RBConstBufferCommon.h" />
+    <ClInclude Include="RBShader\RBConstBufferPS.h" />
+    <ClInclude Include="RBShader\RBConstBufferVS.h" />
+    <ClInclude Include="RBShader\RBShader.h" />
+    <ClInclude Include="RBEngine.h" />
+    <ClInclude Include="RBShader\RBShaderConstantBuffer.h" />
+    <ClInclude Include="RBShader\RBSharedDefines.h" />
+    <ClInclude Include="RBSystem\RBIApplication.h" />
+    <ClInclude Include="RBSystem\RBScriptSystem.h" />
+    <ClInclude Include="RBSystem\RBSerializer.h" />
+    <ClInclude Include="RBSystem\RBSingleton.h" />
+    <ClInclude Include="RBSystem\RBTimer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RBAudio\RBAudio.cpp" />
+    <ClCompile Include="RBInput\RBInput.cpp" />
+    <ClCompile Include="RBEngine.cpp" />
+    <ClCompile Include="RBLog\RBLog.cpp" />
+    <ClCompile Include="RBMath\RBMath.cpp" />
+    <ClCompile Include="RBMath\RBMathUtility.cpp" />
+    <ClCompile Include="RBMath\RBMatrix.cpp" />
+    <ClCompile Include="RBPhysics\RBAABB.cpp" />
+    <ClCompile Include="RBPhysics\RBCollision.cpp" />
+    <ClCompile Include="RBPhysics\RBRay.cpp" />
+    <ClCompile Include="RBRender\DDSTextureLoader.cpp" />
+    <ClCompile Include="RBRender\RBAnimation.cpp" />
+    <ClCompile Include="RBRender\RBDebugRenderer.cpp" />
+    <ClCompile Include="RBRender\RBMaterial.cpp" />
+    <ClCompile Include="RBRender\RBMesh.cpp" />
+    <ClCompile Include="RBRender\RBMeshElement.cpp" />
+    <ClCompile Include="RBRender\RBRenderer.cpp" />
+    <ClCompile Include="RBRender\RBResourceManager.cpp" />
+    <ClCompile Include="RBRender\RBShaderManager.cpp" />
+    <ClCompile Include="RBRender\RBText.cpp" />
+    <ClCompile Include="RBRender\RBTexture.cpp" />
+    <ClCompile Include="RBRender\RBVertex.cpp" />
+    <ClCompile Include="RBScene\RBCamera.cpp" />
+    <ClCompile Include="RBScene\RBScene.cpp" />
+    <ClCompile Include="RBScene\RBSceneMeshObject.cpp" />
+    <ClCompile Include="RBScene\RBSceneObject.cpp" />
+    <ClCompile Include="RBScene\RBSkybox.cpp" />
+    <ClCompile Include="RBShader\RBShader.cpp" />
+    <ClCompile Include="RBSystem\RBScriptSystem.cpp" />
+    <ClCompile Include="RBSystem\RBTimer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="RBShader\RBFontVertexSignature.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).csh</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="RBShader\RBMeshVertexSignature.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).csh</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="RBShader\RBParticleVertexSignature.hlsl">
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).csh</HeaderFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="RBShader\RBPrimitiveVertexSignature.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).csh</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="RBShader\RBSkyboxVertexSignature.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).csh</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ObjectFileOutput>
+    </FxCompile>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{3FFEFB2D-F91A-447A-A2DF-FDA774A3B66F}</ProjectGuid>
+    <RootNamespace>RebornEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)_$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>..\fbx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;FBXSDK_SHARED;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
